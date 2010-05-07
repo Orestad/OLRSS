@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff">
+
+  <LinearLayout
+      android:orientation="horizontal"
+      android:layout_width="fill_parent"
+      android:layout_height="80px"
+      android:layout_weight="1"
+      android:paddingLeft="5px"
+      android:paddingTop="5px"
+      android:paddingRight="5px"
+      android:paddingBottom="0px"
+      android:layout_margin="0px">
+
+ 		<TextView 
+ 			android:id="@+id/titleText"
+ 			android:padding="3px"
+ 			android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:text="DemoRSS"
+    		android:layout_weight="1"/>
+    		
+    	<ImageButton 
+ 			android:id="@+id/titleBut"
+ 			android:src="@drawable/configuration"
+ 			android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:layout_gravity="right"/>
+    		
+	</LinearLayout>
+      
+	<LinearLayout
+    	android:orientation="vertical"
+    	android:layout_width="fill_parent"
+    	android:layout_height="fill_parent"
+    	android:layout_weight="1"
+    	android:paddingLeft="5px"
+      	android:paddingTop="0px"
+      	android:paddingRight="5px"
+      	android:paddingBottom="5px"
+      	android:layout_margin="0px">
+  
+ 		<ListView android:id="@+id/theList"
+               android:layout_width="fill_parent"
+               android:layout_height="fill_parent"
+               android:layout_weight="1"
+               android:padding="5px"
+               android:background="@layout/rounded" />
+               
+ 		<Gallery xmlns:android="http://schemas.android.com/apk/res/android" 
+    		android:id="@+id/gallery"
+    		android:layout_alignParentBottom="true"
+    		android:layout_width="fill_parent"
+    		android:layout_height="60px" 
+    		android:spacing="10dp"
+    		android:background="#ffffff" />
+ 
+	</LinearLayout>        
+      
+</LinearLayout>
+
+

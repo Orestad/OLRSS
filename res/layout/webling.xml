@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:id="@+id/theMenu"
+		android:layout_alignParentBottom="true"
+	    android:layout_width="fill_parent"
+	    android:layout_height="30px">
+	
+    <TableRow>
+      <ImageButton android:id="@+id/back"
+      	  android:src="@drawable/buttonbackdn"
+          android:layout_width="0dip"
+          android:layout_height="fill_parent"
+          android:text="1"
+          android:layout_weight="1"
+          android:background="#ffffff" />
+      <ImageButton android:id="@+id/toList"
+      	  android:src="@drawable/buttonbackdn"
+          android:layout_width="0dip"
+          android:layout_height="fill_parent"
+          android:text="List"
+          android:padding="0px"
+          android:layout_weight="1"
+          android:background="#ffffff" />
+      <ImageButton android:id="@+id/forward"
+          android:src="@drawable/buttonforwarddn"
+          android:layout_width="0dip"
+          android:layout_height="fill_parent"
+          android:text="3"
+          android:layout_weight="1"
+          android:background="#ffffff" />
+    </TableRow>
+    
+</TableLayout>
+
+<FrameLayout
+	android:id="@+id/webframe"
+	android:layout_above="@+id/theMenu"
+	android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+          
+     <WebView android:id="@+id/webview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#00ff00" />
+        
+</FrameLayout>
+</RelativeLayout>
